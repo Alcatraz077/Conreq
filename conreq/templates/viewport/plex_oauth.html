@@ -1,0 +1,17 @@
+{% load static %}
+{% load solo_tags %}
+{% get_solo 'server_settings.ConreqConfig' as server_settings %}
+{% include "primary/loading_animation_container.html" %}
+
+{% csrf_token %}
+{% include "primary/loading_animation_container.html" %}
+
+
+<div class viewport plex_oauth>
+    <div class="plex_oauth">
+        <p>
+            Plex Authentication Succeeded, please proceed to <a href="#/manage_users">Manage Users</a> to import Plex users.
+        </p>
+        
+    </div>
+</div>

@@ -45,7 +45,7 @@ urlpatterns = [
     path("search/", include("conreq.core.search.urls")),
     path("manage_users/", include("conreq.core.manage_users.urls")),
     path("server_settings/", include("conreq.core.server_settings.urls")),
-    path("plex_oauth./", include("conreq.core.plex_oauth.urls")),
+    path("plex_oauth/", include("conreq.core.plex_oauth.urls")),
 ]
 
 # Add User Installed Apps URLS

@@ -53,6 +53,17 @@
                     </div>
                 </div>
             </div>
+            <!--Select Auth Option-->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Authentication Option
+                </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#/manage_users/">Conreq (default)</a>
+                <!--<a class="dropdown-item" a href="#">Organizr</a>-->   
+                <a class="dropdown-item" a href="#/plex_oauth/">Plex OAuth</a>
+            </div>
+            </div>
             <div class="settings-item-group toggler">
                 <div class="settings-item admin pretty p-switch p-fill" data-setting-name="Conreq HTTP Auth">
                     <input {% if server_settings.conreq_http_header_auth %} checked {% endif %} type="checkbox" />
